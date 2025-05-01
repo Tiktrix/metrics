@@ -26,4 +26,4 @@ jobs:
           plugin_lines: yes
           plugin_followup: yes
           plugin_repositories: yes
-          plugin_repositories_featured: MiraclePlayTeam/mircle-apex, MiraclePlayTeam/mircle-server, miracle-chain-api, miracle-scan-server, miracle-scan-front, miracle-bridge-server, miracle-bridge-front
+          plugin_repositories_featured: MiraclePlayTeam/miracle-apex, MiraclePlayTeam/miracle-server, MiraclePlayTeam/miracle-chain-api, MiraclePlayTeam/miracle-scan-server, MiraclePlayTeam/miracle-scan-front, MiraclePlayTeam/miracle-bridge-server, MiraclePlayTeam/miracle-bridge-front
