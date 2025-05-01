@@ -1,7 +1,7 @@
 name: GitHub Metrics
 
 on:
-  schedule: [{ cron: "0 0 * * *" }] # 매일 오전 9시 (UTC 기준 0시)
+  schedule: [{ cron: "0 0 * * *" }] # 매일 오전 9시 (UTC 기준 0시, 한국 시간 오전 9시)
   workflow_dispatch:
 
 jobs:
@@ -17,13 +17,23 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Seoul
 
-          # 활성화할 플러그인들
+          # 🔤 언어 통계
           plugin_languages: yes
-          plugin_languages_ignored: html, css
+          plugin_languages_ignored: html,css
           plugin_languages_limit: 8
 
+          # 🔥 활동 통계
           plugin_traffic: yes
           plugin_lines: yes
           plugin_followup: yes
+
+          # 🏆 리포지토리 통계
           plugin_repositories: yes
-          plugin_repositories_featured: MiraclePlayTeam/miracle-apex, MiraclePlayTeam/miracle-server, MiraclePlayTeam/miracle-chain-api, MiraclePlayTeam/miracle-scan-server, MiraclePlayTeam/miracle-scan-front, MiraclePlayTeam/miracle-bridge-server, MiraclePlayTeam/miracle-bridge-front
+          plugin_repositories_featured: >
+            MiraclePlayTeam/miracle-apex,
+            MiraclePlayTeam/miracle-server,
+            MiraclePlayTeam/miracle-chain-api
+
+          # 👉 향후 추가 가능 플러그인 예시 (필요 시 사용 가능)
+          # plugin_discussions: yes
+          # plugin_habits: yes
