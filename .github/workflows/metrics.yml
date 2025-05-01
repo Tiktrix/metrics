@@ -7,15 +7,19 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: MiraclePlayTeam
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Seoul
+          committer_message: "Update metrics [Skip GitHub Action]"
 
           # 🔤 언어 통계
           plugin_languages: yes
@@ -29,11 +33,4 @@ jobs:
 
           # 🏆 리포지토리 통계
           plugin_repositories: yes
-          plugin_repositories_featured: >
-            MiraclePlayTeam/miracle-apex,
-            MiraclePlayTeam/miracle-server,
-            MiraclePlayTeam/miracle-chain-api
-
-          # 👉 향후 추가 가능 플러그인 예시 (필요 시 사용 가능)
-          # plugin_discussions: yes
-          # plugin_habits: yes
+          plugin_repositories_featured: MiraclePlayTeam/miracle-apex,MiraclePlayTeam/miracle-server,MiraclePlayTeam/miracle-chain-api
