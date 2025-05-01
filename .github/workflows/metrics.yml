@@ -1,7 +1,7 @@
 name: GitHub Metrics
 
 on:
-  schedule: [{ cron: "0 0 * * *" }]  # 매일 오전 9시 (UTC 기준 0시)
+  schedule: [{ cron: "0 0 * * *" }] # 매일 오전 9시 (UTC 기준 0시)
   workflow_dispatch:
 
 jobs:
@@ -26,4 +26,4 @@ jobs:
           plugin_lines: yes
           plugin_followup: yes
           plugin_repositories: yes
-          plugin_repositories_featured: MiraclePlayTeam/dev-miracle-api, MiraclePlayTeam/dev-admin-web
+          plugin_repositories_featured: MiraclePlayTeam/mircle-apex, MiraclePlayTeam/mircle-server, miracle-chain-api, miracle-scan-server, miracle-scan-front, miracle-bridge-server, miracle-bridge-front
