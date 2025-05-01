@@ -1,0 +1,29 @@
+name: GitHub Metrics
+
+on:
+  schedule: [{ cron: "0 0 * * *" }]  # 매일 오전 9시 (UTC 기준 0시)
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: MiraclePlayTeam
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Seoul
+
+          # 활성화할 플러그인들
+          plugin_languages: yes
+          plugin_languages_ignored: html, css
+          plugin_languages_limit: 8
+
+          plugin_traffic: yes
+          plugin_lines: yes
+          plugin_followup: yes
+          plugin_repositories: yes
+          plugin_repositories_featured: MiraclePlayTeam/dev-miracle-api, MiraclePlayTeam/dev-admin-web
