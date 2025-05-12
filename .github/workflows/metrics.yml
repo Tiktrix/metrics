@@ -21,16 +21,63 @@ jobs:
           config_timezone: Asia/Seoul
           committer_message: "Update metrics [Skip GitHub Action]"
 
+          # 🎭 기본 설정
+          config_display: large
+          config_animations: yes
+          config_padding: 10%
+
+          # 🏆 성과 표시
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_threshold: B # 더 많은 성과 표시 (C=적음, B=보통, A=많음)
+
+          # 🗂️ 주요 프로젝트
+          plugin_projects: yes
+          plugin_projects_limit: 4
+
           # 🔤 언어 통계
           plugin_languages: yes
           plugin_languages_ignored: html,css
           plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_colors: github
+          plugin_languages_threshold: 0%
 
           # 🔥 활동 통계
           plugin_traffic: yes
           plugin_lines: yes
           plugin_followup: yes
+          plugin_followup_sections: repositories, user
+
+          # 📅 이슈 & PR 활동
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year # 1년 전체 활동 표시
+
+          # 📊 저장소 기여도
+          plugin_contributors: yes
+          plugin_contributors_head: master
+          plugin_contributors_ignored: github-actions[bot], dependabot[bot]
+
+          # ⏱️ 주간 활동 리듬
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_from: 200 # 더 많은 기록 분석
 
           # 🏆 리포지토리 통계
           plugin_repositories: yes
           plugin_repositories_featured: MiraclePlayTeam/miracle-apex,MiraclePlayTeam/miracle-server,MiraclePlayTeam/miracle-chain-api
+
+          # 💬 최근 활동 타임라인
+          plugin_activity: yes
+          plugin_activity_limit: 10
+          plugin_activity_days: 30
+          plugin_activity_filter: all
+          plugin_activity_visibility: public
+
+          # 🌐 소셜 & 커뮤니티
+          plugin_people: yes
+          plugin_people_types: followers, following
+          plugin_people_limit: 24
+          plugin_people_size: 28
