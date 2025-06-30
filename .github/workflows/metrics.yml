@@ -15,7 +15,7 @@ jobs:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: MiraclePlayTeam
+          user: Tiktrix
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Seoul
@@ -33,4 +33,4 @@ jobs:
 
           # 🏆 리포지토리 통계
           plugin_repositories: yes
-          plugin_repositories_featured: MiraclePlayTeam/miracle-apex,MiraclePlayTeam/miracle-server,MiraclePlayTeam/miracle-chain-api
+          plugin_repositories_featured: Tiktrix/tiktrix-server,Tiktrix/tiktrix-chain-api,Tiktrix/tiktrix-reward-front,tiktrix-front,tiktrix-contract,tiktrix-admin-front

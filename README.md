@@ -1,7 +1,6 @@
+# TikTrix Team Metrics
 
-# MiraclePlayTeam Metrics
-
-Hi there! 👋 Welcome to the official metrics page for **MiraclePlayTeam**.
+Hi there! 👋 Welcome to the official metrics page for **TikTrix Team**.
 
 This repository uses **GitHub Metrics** to automatically track and visualize our team’s development activity — including commits, pull requests, issues, languages used, and contributions across repositories.
 
@@ -9,7 +8,7 @@ This repository uses **GitHub Metrics** to automatically track and visualize our
 
 > Updated daily (Asia/Seoul timezone)
 
-![MiraclePlay Metrics](https://github.com/MiraclePlayTeam/metrics/blob/main/github-metrics.svg)
+![TikTrix Metrics](https://github.com/Tiktrix/metrics/blob/main/github-metrics.svg)
 
 ---
 
@@ -24,9 +23,9 @@ This repository uses **GitHub Metrics** to automatically track and visualize our
 
 ## 📘 Useful Links
 
-- [MiraclePlayTeam on GitHub](https://github.com/MiraclePlayTeam)
+- [TikTrix Team on GitHub](https://github.com/Tiktrix)
 - [GitHub Metrics Documentation](https://github.com/lowlighter/metrics)
 
 ---
 
-> For questions, feedback, or collaboration inquiries, feel free to reach out to any member of the MiraclePlayTeam.
+> For questions, feedback, or collaboration inquiries, feel free to reach out to any member of the TikTrixTeam.
