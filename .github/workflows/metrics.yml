@@ -43,10 +43,12 @@ jobs:
 
           # 📅 Recent Push Activity
           plugin_activity: yes
-          plugin_activity_limit: 1
+          plugin_activity_limit: 3
           plugin_activity_days: 60
+          plugin_activity_load: 1000
           plugin_activity_timestamps: yes
-          plugin_activity_filter: push
+          plugin_activity_visibility: all
+          plugin_activity_filter: push, issue, pr, release
 
           # 🏆 Repository Stats
           plugin_repositories: yes
