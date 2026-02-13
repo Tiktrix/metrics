@@ -31,6 +31,18 @@ jobs:
           plugin_lines: yes
           plugin_followup: yes
 
+          # 📆 커밋 캘린더 (이소캘린더)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+          # ⏰ 코딩 습관 (시간대별 활동 패턴)
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+
           # 🏆 리포지토리 통계
           plugin_repositories: yes
           plugin_repositories_featured: Tiktrix/tiktrix-server,Tiktrix/tiktrix-chain-api,Tiktrix/tiktrix-reward-front,tiktrix-front,tiktrix-contract,tiktrix-admin-front
