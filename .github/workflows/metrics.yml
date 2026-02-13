@@ -41,13 +41,9 @@ jobs:
           plugin_introduction: yes
           plugin_introduction_title: yes
 
-          # 📅 Recent Activity
-          plugin_activity: yes
-          plugin_activity_limit: 3
-          plugin_activity_days: 0
-          plugin_activity_load: 1000
-          plugin_activity_timestamps: yes
-          plugin_activity_visibility: all
+          # 📈 Stargazers Chart
+          plugin_stargazers: yes
+          plugin_stargazers_charts_type: classic
 
           # 🏆 Repository Stats
           plugin_repositories: yes
