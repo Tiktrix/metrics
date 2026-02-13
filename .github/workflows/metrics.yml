@@ -15,7 +15,7 @@ jobs:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: Tiktrix
+          user: realwater
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Seoul
@@ -31,7 +31,7 @@ jobs:
           plugin_lines: yes
           plugin_followup: yes
 
-          # 📆 커밋 캘린더 (이소캘린더)
+          # 📆 커밋 캘린더 (활동 내역)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
