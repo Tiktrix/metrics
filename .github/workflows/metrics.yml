@@ -33,7 +33,7 @@ jobs:
           # 🔥 Activity Stats
           plugin_traffic: yes
           plugin_lines: yes
-          plugin_lines_sections: base, repositories
+          plugin_lines_sections: base, repositories, history
           plugin_followup: yes
           plugin_followup_sections: repositories
           plugin_followup_indepth: yes
