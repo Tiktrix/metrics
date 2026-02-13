@@ -25,11 +25,18 @@ jobs:
           plugin_languages: yes
           plugin_languages_ignored: html,css
           plugin_languages_limit: 8
+          plugin_languages_details: lines, percentage
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_recent_days: 120
+          plugin_languages_recent_load: 500
 
           # 🔥 Activity Stats
           plugin_traffic: yes
           plugin_lines: yes
+          plugin_lines_sections: base, repositories
           plugin_followup: yes
+          plugin_followup_sections: repositories
+          plugin_followup_indepth: yes
 
           # 👥 Organization Members
           plugin_people: yes
